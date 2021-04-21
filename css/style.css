@@ -75,6 +75,68 @@
   letter-spacing: 1px;
 }
 
+#main .container {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+@media only screen and (min-width: 992px) {
+  #main .container {
+    padding-top: 180px;
+    padding-bottom: 180px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #main .container {
+    padding-top: 240px !important;
+  }
+}
+#main .container .text .first {
+  font-size: 3.5rem;
+}
+@media only screen and (min-width: 768px) {
+  #main .container .text .first {
+    font-size: 4rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #main .container .text .first {
+    font-size: 5.5rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #main .container .text .first {
+    font-size: 6.5rem;
+  }
+}
+@media only screen and (min-width: 1400p) {
+  #main .container .text .first {
+    font-size: 7rem;
+  }
+}
+#main .container .text .secound {
+  font-size: 2.5rem;
+}
+@media only screen and (min-width: 768px) {
+  #main .container .text .secound {
+    font-size: 2.8rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #main .container .text .secound {
+    font-size: 3.5rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #main .container .text .secound {
+    font-size: 4.5rem;
+  }
+}
+@media only screen and (min-width: 1400p) {
+  #main .container .text .secound {
+    font-size: 5.2rem;
+  }
+}
+
 p, a, h1, h2, h3, h4, h5, h6 {
   color: white;
 }
@@ -115,13 +177,17 @@ a, img {
   font-size: 1.5rem;
 }
 
+.btn_wrapper {
+  text-align: center;
+}
+
 .btn {
   font-family: MontMedium;
-  color: white;
+  color: black;
   text-align: center;
   text-transform: uppercase;
   font-size: 1rem;
-  padding: 10px 40px;
+  padding: 15px 40px !important;
   background-color: #f3db3a;
   padding: 5px;
 }

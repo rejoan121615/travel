@@ -2,6 +2,7 @@
 @import 'mixingVariable';
 @import 'topBar';
 @import 'navBar';
+@import 'main';
 
 
 
@@ -32,9 +33,13 @@ a, img {
 }
 
 // button 
+.btn_wrapper {
+    text-align: center;
+}
+
 .btn {
-    @include fonts (MontMedium, 1rem, white, center, uppercase);
-    padding: 10px 40px;
+    @include fonts (MontMedium, 1rem, black, center, uppercase);
+    padding: 15px 40px!important;
     background-color: $yellow;
     padding: 5px;
 }

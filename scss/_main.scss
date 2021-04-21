@@ -1,0 +1,50 @@
+#main {
+
+    .container {
+        @include padY(130px, 130px);
+
+        // responsive 
+        @include resp ($lg) {
+            @include padY (180px, 180px);
+        } 
+
+        @include resp ($xl) {
+            padding-top: 240px!important;
+        }
+
+        .text {
+            .first {
+                font-size: 3.5rem;
+                @include resp ($md) {
+                    font-size: 4rem;
+                }
+                @include resp ($lg) {
+                    font-size: 5.5rem;
+                }
+                @include resp ($xl) {
+                    font-size: 6.5rem;
+                }
+                @include resp ($xxl) {
+                    font-size: 7rem;
+                }
+
+            }
+            .secound {
+                font-size: 2.5rem;
+                @include resp ($md) {
+                    font-size: 2.8rem;
+                }
+                @include resp ($lg) {
+                    font-size: 3.5rem;
+                }
+                @include resp ($xl) {
+                    font-size: 4.5rem;
+                }
+                @include resp ($xxl) {
+                    font-size: 5.2rem;
+                }
+            }
+
+        }
+    }
+}
