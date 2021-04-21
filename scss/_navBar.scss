@@ -1,0 +1,27 @@
+.navbar {
+    background-color: $trans_black;
+    .container {
+     
+
+
+        // brand 
+        .navbar-brand {
+            @include fonts (MontBlack, 1.6rem, white, left, capitalize);
+            img {
+                width: 25px;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+        }
+
+        // navbar nav 
+        .navbar-nav {
+            .nav-link{
+                @include fonts (MontMedium, 1.2rem, white, center, uppercase);
+                letter-spacing: 1px;
+            }
+        }
+
+        
+    }
+}

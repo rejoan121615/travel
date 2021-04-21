@@ -1,5 +1,9 @@
 #top-bar {
+    background-color: $trans_black;
     .container {
+        // responsive 
+            border-bottom: 3px solid rgba(255, 255, 255, 0.603);
+            padding-bottom: 25px;      
         .small_heading {
             font-size: 1rem;
         }

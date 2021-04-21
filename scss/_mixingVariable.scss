@@ -1,6 +1,8 @@
 // colors 
 $yellow: #f3db3a;
 $black: #4b4b4b;
+$trans_black: #0000007c;
+
 
 
 
@@ -35,44 +37,9 @@ $black: #4b4b4b;
     font-size: $size;
 }
 
-
-// fonts 
-
-.para {
-    @include fonts(LatoRegu, 1rem, white, left, uppercase);
+@mixin padY ($t, $b) {
+    padding-top: $t;
+    padding-bottom: $b;
 }
 
-.section_heading {
-    @include fonts(MontBlack, 4rem, white, center, capitalize);
-}
-.assis_heading {
-    @include fonts (MontRegular, 2.5rem, white, center, capitalize);
-}
 
-.small_heading {
-    @include fonts (MontMedium, 1.5rem, white, left, capitalize);
-}
-
-// button 
-.btn {
-    @include fonts (MontMedium, 1rem, white, center, uppercase);
-    padding: 10px 40px;
-    background-color: $yellow;
-    padding: 5px;
-}
-
-.yellow {
-    color: $yellow;
-}
-
-.yellow_bg {
-    background-color: $yellow;
-}
-
-.black {
-    color: $black;
-}
-
-.black_bg {
-    background-color: $black;
-}
