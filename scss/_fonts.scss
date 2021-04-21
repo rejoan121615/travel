@@ -1,0 +1,16 @@
+$fonts: (
+    MontRegular: "../fonts/Montserrat-Regular.otf",
+    MontMedium: "../fonts/Montserrat-Medium.otf",
+    MontExtrabold: "../fonts/Montserrat-ExtraBold.otf",
+    MontBlack: "../fonts/Montserrat-Black.otf",
+    LatoRegu: "../fonts/Lato-Regular.ttf",
+);
+
+@each $name, $path in $fonts {
+    @font-face {
+        font-family: $name;
+        src: url($path);
+    }
+}
+
+

@@ -1,0 +1,46 @@
+#top-bar {
+    .container {
+        .small_heading {
+            font-size: 1rem;
+        }
+        // common style 
+        .icon {
+            width: 30px;
+            margin-right: 15px;
+        }
+
+        .item {
+            img {
+                display: inline-block;
+            }
+            h6 {
+                display: inline-block;
+            }
+        }
+
+        // social bar 
+        .top-social-bar {
+            img {
+                width: 40px;
+                // responsive 
+                @include resp ($sm) {
+                    width: 35px;
+                    margin-right: 12px;
+                }
+            }
+        }
+
+
+
+        // user area 
+        .user-area {
+            .item {
+                
+                img {
+                    margin-right: 0px;
+                }
+            }
+        }
+
+    }
+}

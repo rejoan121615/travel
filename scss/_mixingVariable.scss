@@ -1,0 +1,78 @@
+// colors 
+$yellow: #f3db3a;
+$black: #4b4b4b;
+
+
+
+// responsive 
+
+  $xs: 0;
+  $sm: 576px;
+  $md: 768px;
+  $lg: 992px;
+  $xl: 1200px;
+  $xxl: 1400p;
+
+
+
+  @mixin resp ($width) {
+    @media only screen and (min-width: $width) {
+        @content;
+    }
+  }
+
+@mixin bgimg ($src, $size, $position) {
+    background: url($src) no-repeat $position;
+    background-size: $size;
+}
+
+// fonts 
+@mixin fonts ($name, $size, $color, $align, $transform) {
+    font-family: $name;
+    color: $color;
+    text-align: $align;
+    text-transform: $transform;
+    font-size: $size;
+}
+
+
+// fonts 
+
+.para {
+    @include fonts(LatoRegu, 1rem, white, left, uppercase);
+}
+
+.section_heading {
+    @include fonts(MontBlack, 4rem, white, center, capitalize);
+}
+.assis_heading {
+    @include fonts (MontRegular, 2.5rem, white, center, capitalize);
+}
+
+.small_heading {
+    @include fonts (MontMedium, 1.5rem, white, left, capitalize);
+}
+
+// button 
+.btn {
+    @include fonts (MontMedium, 1rem, white, center, uppercase);
+    padding: 10px 40px;
+    background-color: $yellow;
+    padding: 5px;
+}
+
+.yellow {
+    color: $yellow;
+}
+
+.yellow_bg {
+    background-color: $yellow;
+}
+
+.black {
+    color: $black;
+}
+
+.black_bg {
+    background-color: $black;
+}
