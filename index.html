@@ -127,13 +127,18 @@
             <main id="main">
                 <div class="container">
                     <div class="text">
-                        <h1 class="section_heading first mb-3">start your greatest</h1>
-                        <h2 class="section_heading secound">adventure with us</h2>
-                        <p class="para text-center mt-4 w-lg-70 mx-lg-auto mt-lg-5">
+                        <h1 class="section_heading first mb-3">
+                            start your greatest
+                        </h1>
+                        <h2 class="section_heading secound">
+                            adventure with us
+                        </h2>
+                        <p
+                            class="para text-center mt-4 w-lg-70 mx-lg-auto mt-lg-5"
+                        >
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Pariatur, beatae! Quis aliquam facilis est
                             corporis, cumque, quia, minus nostrum neque
-                            
                         </p>
                         <div class="btn_wrapper mt-5">
                             <a href="" class="btn">click here</a>
@@ -142,7 +147,58 @@
                 </div>
             </main>
         </div>
-
+        <!-- find hotel section  -->
+        <section id="find-hotel">
+            <div class="container">
+                <h1 class="section_heading text-dark">find hotel</h1>
+                <!-- form section  -->
+                <form class="mt-5">
+                    <div class="row">
+                        <!-- location  -->
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-2 mb-4">
+                            <label for="email" class="form-label">where</label>
+                            <select
+                                class="form-select"
+                                name="destination_location"
+                                id="location"
+                                aria-label="dafault location"
+                            >
+                                <option selected>location</option>
+                                <option value="1">India</option>
+                                <option value="2">Bangladesh</option>
+                                <option value="3">Vutan</option>
+                                <option value="4">Nepal</option>
+                            </select>
+                        </div>
+                        <!-- check in date  -->
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-2 mb-4">
+                            <label for="checkin_date" class="form-label">check in</label>
+                            <input type="date" class="form-control" name="in_date" id="Indate" aria-label="date">
+                        </div>
+                        <!-- check out date  -->
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-2 mb-4">
+                            <label for="checkout_date" class="form-label">check out</label>
+                            <input type="date" class="form-control" name="out_date" id="Outdate" aria-label="date">
+                        </div>
+                        <!-- adult  -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 w-xl-12 w-xxl-12 mb-4 mb-lg-0">
+                            <label for="adult" class="form-label">adult</label>
+                            <input type="number" class="form-control" name="adult" id="adult" aria-label="adult" placeholder="00">
+                        </div>
+                        <!-- child  -->
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 w-xl-12 w-xxl-12 mb-5 mb-lg-0">
+                            <label for="child" class="form-label">child</label>
+                            <input type="number" class="form-control" name="child" id="child" aria-label="children" placeholder="00">
+                        </div>
+                        <!-- submit btn  -->
+                        <div class="col-12 col-sm-12 col-lg-4 col-xl-3 text-center mt-lg-4">
+                            <button class="btn submit-btn text-white mt-xl-2">click here</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        
         <!-- bootstrap js file  -->
         <script src="./bootstrap/bootstrap.bundle.min.js"></script>
     </body>

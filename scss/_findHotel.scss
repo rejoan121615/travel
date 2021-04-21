@@ -1,0 +1,25 @@
+#find-hotel {
+    background: url('../img/form_background.png') no-repeat center center;
+    background-size: cover;
+    .container {
+     
+        
+
+        form {
+            label {
+                @include fonts (MontMedium, 1.5rem,  black, left, capitalize);
+            }
+            .submit-btn {
+                background-color: $trans_black!important;
+                // responsive 
+                // @include resp ($xl) {
+                //     padding: 10px 30px!important;
+                //     margin-top: 16px!important;
+                // }
+                &:hover {
+                    color: white!important;
+                }
+            }
+        }
+    }
+}

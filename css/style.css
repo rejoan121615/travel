@@ -137,6 +137,24 @@
   }
 }
 
+#find-hotel {
+  background: url("../img/form_background.png") no-repeat center center;
+  background-size: cover;
+}
+#find-hotel .container form label {
+  font-family: MontMedium;
+  color: black;
+  text-align: left;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+#find-hotel .container form .submit-btn {
+  background-color: #0000007c !important;
+}
+#find-hotel .container form .submit-btn:hover {
+  color: white !important;
+}
+
 p, a, h1, h2, h3, h4, h5, h6 {
   color: white;
 }
@@ -158,7 +176,7 @@ a, img {
   color: white;
   text-align: center;
   text-transform: capitalize;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .assis_heading {
@@ -166,7 +184,7 @@ a, img {
   color: white;
   text-align: center;
   text-transform: capitalize;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .small_heading {
@@ -206,6 +224,11 @@ a, img {
 
 .black_bg {
   background-color: #4b4b4b;
+}
+
+.container {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 #nav-main-wrapper {

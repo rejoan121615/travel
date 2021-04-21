@@ -3,6 +3,8 @@
 @import 'topBar';
 @import 'navBar';
 @import 'main';
+@import 'findHotel';
+
 
 
 
@@ -22,10 +24,11 @@ a, img {
 }
 
 .section_heading {
-    @include fonts(MontBlack, 4rem, white, center, capitalize);
+    @include fonts(MontBlack, 3rem, white, center, capitalize);
 }
+
 .assis_heading {
-    @include fonts (MontRegular, 2.5rem, white, center, capitalize);
+    @include fonts (MontRegular, 2rem, white, center, capitalize);
 }
 
 .small_heading {
@@ -61,7 +64,9 @@ a, img {
 }
 
 
-
+.container {
+    @include padY (80px, 80px);
+}
 
 
 
