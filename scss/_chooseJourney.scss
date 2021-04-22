@@ -1,0 +1,31 @@
+#chooseYourJourney {
+    .container {
+        .option_wrap {
+            aside {
+                // images 
+                .img_wrap {
+                    
+                    img {
+                        max-width: 120px;
+                        // responsive 
+                        @include resp ($sm) {
+                            max-width: 90px;
+                        }
+                        @include resp ($md) {
+                            max-width: 120px;
+                        }
+                        @include resp ($xl) {
+                            max-width: 95px;
+                        }
+                    }
+                }
+                // texts 
+                .texts {
+                    .para {
+                        max-width: 400px;
+                    }
+                }
+            }
+        }
+    }
+}

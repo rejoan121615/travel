@@ -13,7 +13,7 @@ $trans_black: #0000007c;
   $md: 768px;
   $lg: 992px;
   $xl: 1200px;
-  $xxl: 1400p;
+  $xxl: 1400px;
 
 
 
@@ -41,5 +41,13 @@ $trans_black: #0000007c;
     padding-top: $t;
     padding-bottom: $b;
 }
+
+
+@function im ($value) {
+  $counter: unquote(!important);
+  $counter: $value + $counter;
+  @return $counter;
+}
+
 
 

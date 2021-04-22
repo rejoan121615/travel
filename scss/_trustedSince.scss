@@ -1,0 +1,58 @@
+#trusted_since {
+    background: url("../img/trusted_left.png") no-repeat center top;
+    background-size: cover;
+    // responsive
+    @include resp($xxl) {
+        background: url("../img/trusted_left.png") no-repeat center top;
+        background-size: cover;
+    }
+    .container {
+        // responsive
+
+        @include resp($xl) {
+            width: im(100%);
+            max-width: im(1200px);
+            @include padY(0px, 0px);
+        }
+        @include resp($xxl) {
+            max-width: im(1500px);
+        }
+
+        // text container
+        .texts {
+            @at-root .option_list {
+                list-style: none;
+                li {
+                    position: relative;
+                    &::before {
+                        content: "";
+                        width: 25px;
+                        height: 25px;
+                        background: url(../icons/check.png) no-repeat center
+                            center;
+                        background-size: 100%;
+                        position: absolute;
+                        left: -35px;
+                        top: 5px;
+                    }
+                }
+                li.small {
+                    &::before {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+
+        // highlight img
+        img.highlight_img {
+            @include resp($xl) {
+                height: 100% !important;
+            }
+            @include resp($xxl) {
+                height: initial !important;
+            }
+        }
+    }
+}

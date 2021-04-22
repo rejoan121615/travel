@@ -1,0 +1,53 @@
+#selectYourPackage {
+    background:
+    // url("../img/package_color.png") no-repeat center bottom,
+        url("../img/package.jpg") no-repeat center center;
+    background-size: cover;
+    // responsive
+    @include resp($xl) {
+        background: url("../img/package_color.png") no-repeat center bottom,
+            url("../img/package.jpg") no-repeat center center;
+        background-size: 100% 30%, cover;
+    }
+    .container {
+        // package wrapper
+        .package_wrap {
+            margin-top: 80px;
+            .item {
+                max-width: 400px;
+                border-radius: 25px;
+                // responsive
+                @include resp($md) {
+                    max-width: 550px;
+                }
+                @include resp($xl) {
+                    max-width: 30%;
+                }
+                // package price
+                .pack-price {
+                    width: 112%;
+                    margin-left: -6%;
+                    @include padY(10px, 10px);
+                    .para {
+                        font-size: 2rem;
+                    }
+                }
+                // option list
+                .option_list {
+                    max-width: 300px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    .para_bold {
+                        @include resp($xl) {
+                            margin-bottom: 5px;
+                            font-size: 1rem;
+                        }
+                        @include resp($xxl) {
+                            margin-bottom: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

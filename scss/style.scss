@@ -1,48 +1,78 @@
-@import 'fonts';
-@import 'mixingVariable';
-@import 'topBar';
-@import 'navBar';
-@import 'main';
-@import 'findHotel';
+@import "fonts";
+@import "mixingVariable";
+@import "topBar";
+@import "navBar";
+@import "main";
+@import "findHotel";
+@import "trustedSince";
+@import "chooseJourney";
+@import 'package';
 
 
-
-
-p, a, h1, h2, h3, h4, h5, h6 {
-    color: white;
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: black;
 }
 
-a, img {
+a,
+img {
     display: inline-block;
 }
 
-
-// fonts 
+// fonts
 
 .para {
-    @include fonts(LatoRegu, 1rem, white, left, uppercase);
+    @include fonts(MontRegular, 1rem, black, left, initial);
+    // responsive
+    @include resp($xl) {
+        font-size: 1.15rem;
+    }
+}
+
+.para_bold {
+    @extend .para;
+    font-weight: bold;
 }
 
 .section_heading {
-    @include fonts(MontBlack, 3rem, white, center, capitalize);
+    @include fonts(MontBlack, 2.2rem, black, center, capitalize);
+    // responsive
+    @include resp($lg) {
+        font-size: 2.6rem;
+    }
+    @include resp($xl) {
+        font-size: 3rem;
+    }
 }
 
 .assis_heading {
-    @include fonts (MontRegular, 2rem, white, center, capitalize);
+    @extend .section_heading;
+    font-family: MontMedium;
 }
 
 .small_heading {
-    @include fonts (MontMedium, 1.5rem, white, left, capitalize);
+    @include fonts(MontMedium, 1.5rem, black, left, capitalize);
 }
 
-// button 
+.small_heading_bold {
+    @extend .small_heading;
+    font-family: MontExtrabold;
+}
+
+// button
 .btn_wrapper {
     text-align: center;
 }
 
 .btn {
-    @include fonts (MontMedium, 1rem, black, center, uppercase);
-    padding: 15px 40px!important;
+    @include fonts(MontMedium, 1rem, black, center, uppercase);
+    padding: 15px 40px !important;
     background-color: $yellow;
     padding: 5px;
 }
@@ -63,13 +93,10 @@ a, img {
     background-color: $black;
 }
 
-
 .container {
-    @include padY (80px, 80px);
+    @include padY(80px, 80px);
 }
 
-
-
 #nav-main-wrapper {
-    @include bgimg ('../img/main-nav-bg.jpg', cover, center center);
+    @include bgimg("../img/main-nav-bg.jpg", cover, center center);
 }
