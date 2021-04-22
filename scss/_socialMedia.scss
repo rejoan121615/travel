@@ -1,0 +1,27 @@
+#socialMedia {
+    .container {
+        padding-top: im(0px);
+        padding-bottom: im(50px);
+        .row {
+            max-width: 400px;
+            // responsive 
+            @include resp (650px) {
+                max-width: initial;
+            }
+            .icon_wrapper {
+                width: 30%;
+                max-width: 500px;
+                // responsive 
+                @include resp (650px) {
+                    width: initial;
+                }
+                img {
+                    @include resp (650px) {
+                        width: 80px!important;
+                    }
+                }
+            }
+            
+        }
+    }
+}
