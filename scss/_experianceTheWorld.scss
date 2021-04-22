@@ -1,0 +1,23 @@
+#experienceTheWorld {
+    .container {
+        .card {
+            // btn
+            .btn_wrapper {
+                .btn {
+                    margin-top: -65px;
+                    // responsive
+                    @include resp($lg) {
+                        margin-top: 55px;
+                    }
+                    @include resp($xl) {
+                        margin-top: -65px;
+                    }
+                }
+            }
+            // heading 
+            .section_heading {
+                font-size: 25px;
+            }
+        }
+    }
+}

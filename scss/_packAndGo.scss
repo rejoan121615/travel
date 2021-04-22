@@ -2,10 +2,19 @@
     background: url("../img/onTheGo_bg.jpg") no-repeat center center;
     background-size: cover;
 
+    @include resp ($xl) {
+        background-size: 100% 70%;
+        background-color: $blue;
+        background-position: center top;
+    }
+
     // container
     .container {
         @include resp($xl) {
-            @include padY(im(220px), im(220px));
+            @include padY(im(180px), im(150px));
+        }
+        @include resp ($xxl) {
+            @include padY(im(200px), im(180px))
         }
         // package wrapper
         .pack_wrapper {
@@ -26,7 +35,7 @@
                 }
 
                 //    card image
-                .card-img-top {
+                @at-root .card-img-top {
                     border-radius: 25px 25px 0px 0px;
                     // responsive
                     @include resp($lg) {
@@ -55,6 +64,7 @@
                         padding-bottom: 80px;
                         position: relative;
                         z-index: 100;
+                        border-color: $blue;
                     }
                 }
             }

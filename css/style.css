@@ -356,9 +356,22 @@
   background-size: cover;
 }
 @media only screen and (min-width: 1200px) {
+  #packAndGo {
+    background-size: 100% 70%;
+    background-color: #00a4ff;
+    background-position: center top;
+  }
+}
+@media only screen and (min-width: 1200px) {
   #packAndGo .container {
-    padding-top: 220px!important;
-    padding-bottom: 220px!important;
+    padding-top: 180px!important;
+    padding-bottom: 150px!important;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #packAndGo .container {
+    padding-top: 200px!important;
+    padding-bottom: 180px!important;
   }
 }
 #packAndGo .container .pack_wrapper {
@@ -383,19 +396,20 @@
     max-width: initial!important;
   }
 }
-#packAndGo .container .pack_wrapper .card .card-img-top {
+.card-img-top {
   border-radius: 25px 25px 0px 0px;
 }
 @media only screen and (min-width: 992px) {
-  #packAndGo .container .pack_wrapper .card .card-img-top {
+  .card-img-top {
     border-radius: 25px 0px 0px 25px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  #packAndGo .container .pack_wrapper .card .card-img-top {
+  .card-img-top {
     border-radius: 25px 25px 0px 0px;
   }
 }
+
 #packAndGo .container .pack_wrapper .card .sm_head {
   font-size: 1.6rem!important;
 }
@@ -410,7 +424,25 @@
     padding-bottom: 80px;
     position: relative;
     z-index: 100;
+    border-color: #00a4ff;
   }
+}
+
+#experienceTheWorld .container .card .btn_wrapper .btn {
+  margin-top: -65px;
+}
+@media only screen and (min-width: 992px) {
+  #experienceTheWorld .container .card .btn_wrapper .btn {
+    margin-top: 55px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #experienceTheWorld .container .card .btn_wrapper .btn {
+    margin-top: -65px;
+  }
+}
+#experienceTheWorld .container .card .section_heading, #experienceTheWorld .container .card .assis_heading {
+  font-size: 25px;
 }
 
 p,
