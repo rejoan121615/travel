@@ -285,6 +285,72 @@
   }
 }
 
+#takeYourJourney .container .texts .figure {
+  width: 100%;
+  max-width: 520px;
+}
+@media only screen and (min-width: 992px) {
+  #takeYourJourney .container .texts .figure {
+    max-width: 700px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #takeYourJourney .container .texts .figure {
+    max-width: 100%;
+  }
+}
+#takeYourJourney .container .texts .button_wrapper {
+  max-width: 450px;
+}
+@media only screen and (min-width: 768px) {
+  #takeYourJourney .container .texts .button_wrapper {
+    width: 100%;
+    max-width: 650px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #takeYourJourney .container .texts .button_wrapper {
+    max-width: 100%;
+    margin-top: 70px!important;
+  }
+}
+#takeYourJourney .container .texts .button_wrapper .button {
+  border: 0px;
+  padding-top: 20px!important;
+  padding-bottom: 20px!important;
+}
+#takeYourJourney .container .texts .button_wrapper .button h3 {
+  font-size: 22px;
+  margin-top: 5px;
+}
+#takeYourJourney .container .texts .button_wrapper .button img {
+  max-width: 120px;
+}
+@media only screen and (min-width: 768px) {
+  #takeYourJourney .container .texts .button_wrapper .button img {
+    max-width: 55px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #takeYourJourney .container .texts .button_wrapper .button img {
+    max-width: 40px;
+  }
+}
+#takeYourJourney .container .texts .button_wrapper .button.active {
+  background-color: #00a4ff;
+}
+@media only screen and (min-width: 1200px) {
+  #takeYourJourney .container .texts .para, #takeYourJourney .container .texts .para_bold {
+    margin-top: 70px!important;
+    margin-left: 0px!important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #takeYourJourney .container .texts .btn_wrapper {
+    margin-top: 100px!important;
+  }
+}
+
 p,
 a,
 h1,

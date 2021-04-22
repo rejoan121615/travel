@@ -1,0 +1,78 @@
+#takeYourJourney {
+    .container {
+
+
+
+
+        // texts 
+        .texts {
+
+            .figure {
+                width: 100%;
+                max-width: 520px;
+                // responsive 
+                @include resp ($lg) {
+                    max-width: 700px;
+                }
+                @include resp ($xl) {
+                    max-width: 100%;
+                }
+            }
+            // button wrapper 
+            .button_wrapper {
+                max-width: 450px;
+        
+                // responsive 
+                @include resp ($md) {
+                    width: 100%;
+                    max-width: 650px;
+                }
+                @include resp ($xl) {
+                    max-width: 100%;
+                    margin-top: im(70px);
+                }
+                .button {
+                    border: 0px;
+                    @include padY( im(20px), im(20px));
+
+
+
+                    h3 {
+                        font-size: 22px;
+                        margin-top: 5px;
+
+                    }
+                    img {
+                        max-width: 120px;
+                        // responsive 
+                        @include resp ($md) {
+                            max-width: 55px;
+                        }
+                        @include resp ($xl) {
+                            max-width: 40px;
+                        }
+                    }
+                    &.active {
+                        background-color: $blue;
+                    }
+                }
+
+            }
+            // paragraph 
+            .para {
+                @include resp ($xl) {
+                    margin-top: im(70px);
+                    margin-left: im(0px);
+                }
+            }
+
+            // button wrapper 
+            .btn_wrapper {
+                @include resp ($xl) {
+                    margin-top: im(100px);
+                }
+            }
+            
+        }
+    }
+}
