@@ -1,0 +1,14 @@
+#address {
+    .container {
+        .row {
+            .img_wrap {
+                width: 100px;
+                margin-right: 20px;
+                // responsive 
+                @include resp ($sm) {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
