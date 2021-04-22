@@ -106,6 +106,18 @@ img {
 
 .container {
     @include padY(80px, 80px);
+    @include resp ($md) {
+        @include padY( 110px, 110px);
+    }
+    @include resp ($lg) {
+        @include padY (125px, 125px);
+    }
+    @include resp ($xl) {
+        @include padY(140px, 140px);
+    }
+    @include resp ($xxl) {
+        @include padY (165px, 165px);
+    }
 }
 
 #nav-main-wrapper {

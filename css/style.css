@@ -19,10 +19,11 @@
   src: url("../fonts/Lato-Regular.ttf");
 }
 #top-bar {
-  background-color: #0000007c;
+  background-color: #000000c9;
 }
 #top-bar .container {
   border-bottom: 3px solid rgba(255, 255, 255, 0.603);
+  padding-top: 25px;
   padding-bottom: 25px;
 }
 #top-bar .container .small_heading, #top-bar .container .small_heading_bold {
@@ -52,7 +53,7 @@
 }
 
 .navbar {
-  background-color: #0000007c;
+  background-color: #000000c9;
 }
 .navbar .container .navbar-brand {
   font-family: MontBlack;
@@ -141,6 +142,17 @@
   background: url("../img/form_background.png") no-repeat center center;
   background-size: cover;
 }
+#find-hotel .container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+#find-hotel .container select, #find-hotel .container input {
+  font-family: MontMedium;
+  color: #00000049;
+  text-align: left;
+  text-transform: capitalize;
+  font-size: 1.05rem;
+}
 #find-hotel .container form label {
   font-family: MontMedium;
   color: black;
@@ -149,7 +161,7 @@
   font-size: 1.5rem;
 }
 #find-hotel .container form .submit-btn {
-  background-color: #0000007c !important;
+  background-color: #000000c9 !important;
 }
 #find-hotel .container form .submit-btn:hover {
   color: white !important;
@@ -542,16 +554,37 @@
   background: url("../img/startYourJourney.jpg") no-repeat center top;
   background-size: 100% 100%;
 }
+@media only screen and (min-width: 992px) {
+  #startYourJourney .container {
+    padding-bottom: 80px;
+  }
+}
 #startYourJourney .container .location {
   margin-top: 80px;
 }
 #startYourJourney .container .location img {
-  width: 400px;
+  width: 230px;
+}
+@media only screen and (min-width: 576px) {
+  #startYourJourney .container .location img {
+    width: 280px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #startYourJourney .container .location img {
+    width: 330px;
+  }
 }
 
+@media only screen and (min-width: 1200px) {
+  #address .container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
 #address .container .row .img_wrap {
-  width: 100px;
-  margin-right: 20px;
+  width: 75px;
+  margin-right: 20px !important;
 }
 @media only screen and (min-width: 576px) {
   #address .container .row .img_wrap {
@@ -593,6 +626,7 @@
   padding-top: 40px;
   padding-bottom: 30px;
 }
+
 p,
 a,
 h1,
@@ -694,6 +728,30 @@ img {
 .container {
   padding-top: 80px;
   padding-bottom: 80px;
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container {
+    padding-top: 125px;
+    padding-bottom: 125px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .container {
+    padding-top: 165px;
+    padding-bottom: 165px;
+  }
 }
 
 #nav-main-wrapper {

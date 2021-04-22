@@ -1,25 +1,33 @@
 #find-hotel {
-    background: url('../img/form_background.png') no-repeat center center;
+    background: url("../img/form_background.png") no-repeat center center;
     background-size: cover;
     .container {
-     
-        
+        @include padY (80px, 80px);
+        select, input {
+            font-family: MontMedium;
+            color: #00000049;
+            text-align: left;
+            text-transform: capitalize;
+            font-size: 1.05rem;
+        }
 
         form {
             label {
-                @include fonts (MontMedium, 1.5rem,  black, left, capitalize);
+                @include fonts(MontMedium, 1.5rem, black, left, capitalize);
             }
             .submit-btn {
-                background-color: $trans_black!important;
-                // responsive 
+                background-color: $trans_black !important;
+                // responsive
                 // @include resp ($xl) {
                 //     padding: 10px 30px!important;
                 //     margin-top: 16px!important;
                 // }
                 &:hover {
-                    color: white!important;
+                    color: white !important;
                 }
             }
+
+            // place holder
         }
     }
 }

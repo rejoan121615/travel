@@ -2,8 +2,5 @@
     background-color: $yellow;
     .container {
         @include padY (40px, 30px);
-        h5 {
-           
-        }
     }
 }

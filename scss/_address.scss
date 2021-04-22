@@ -1,9 +1,12 @@
 #address {
     .container {
+        @include resp ($xl) {
+            @include padY (80px, 80px);
+        }
         .row {
             .img_wrap {
-                width: 100px;
-                margin-right: 20px;
+                width: 75px;
+                margin-right: 20px!important;
                 // responsive 
                 @include resp ($sm) {
                     margin-right: 0px;
