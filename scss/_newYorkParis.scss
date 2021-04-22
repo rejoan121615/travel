@@ -1,0 +1,53 @@
+#newYorkParis {
+    @include resp($sm) {
+        background: url("../img/newYorkParis.jpg") no-repeat left top;
+        background-size: 200%;
+    }
+    @include resp($lg) {
+        background-size: 100%;
+    }
+    @include resp($xl) {
+        background-size: 120%;
+    }
+    .container {
+        @include resp($sm) {
+            @include padY(im(600px), 120px);
+        }
+        @include resp($lg) {
+            padding-top: im(150px);
+        }
+
+        .wrapper {
+            background-color: white;
+            @extend .box_shadow;
+            // responsive
+            @include resp($sm) {
+                max-width: 450px;
+            }
+            @include resp($md) {
+                max-width: 500px;
+            }
+            @include resp($lg) {
+                max-width: 650px;
+            }
+            h6.para_bold {
+                font-size: 1.3rem;
+                text-transform: capitalize;
+                font-weight: bold;
+                margin-top: 8px;
+            }
+            // option wrapper
+            .option_wrap {
+                max-width: 450px;
+            }
+            .display-1 {
+                font-size: 3rem;
+            }
+            // paragraph
+            // bottom
+            .bottom {
+                max-width: 400px;
+            }
+        }
+    }
+}

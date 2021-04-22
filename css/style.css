@@ -428,6 +428,10 @@
   }
 }
 
+#experienceTheWorld {
+  background: #0000002c url("../img/experianceAmazing.jpg") no-repeat center center;
+  background-size: cover;
+}
 #experienceTheWorld .container .card .btn_wrapper .btn {
   margin-top: -65px;
 }
@@ -443,6 +447,67 @@
 }
 #experienceTheWorld .container .card .section_heading, #experienceTheWorld .container .card .assis_heading {
   font-size: 25px;
+}
+
+@media only screen and (min-width: 576px) {
+  #newYorkParis {
+    background: url("../img/newYorkParis.jpg") no-repeat left top;
+    background-size: 200%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #newYorkParis {
+    background-size: 100%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #newYorkParis {
+    background-size: 120%;
+  }
+}
+@media only screen and (min-width: 576px) {
+  #newYorkParis .container {
+    padding-top: 600px!important;
+    padding-bottom: 120px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #newYorkParis .container {
+    padding-top: 150px!important;
+  }
+}
+#newYorkParis .container .wrapper {
+  background-color: white;
+}
+@media only screen and (min-width: 576px) {
+  #newYorkParis .container .wrapper {
+    max-width: 450px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #newYorkParis .container .wrapper {
+    max-width: 500px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #newYorkParis .container .wrapper {
+    max-width: 650px;
+  }
+}
+#newYorkParis .container .wrapper h6.para_bold, #newYorkParis #packAndGo .container .wrapper .pack_wrapper .card h6.sm_head, #packAndGo #newYorkParis .container .wrapper .pack_wrapper .card h6.sm_head, #newYorkParis #packAndGo .container .pack_wrapper .card .wrapper h6.sm_head, #packAndGo #newYorkParis .container .pack_wrapper .card .wrapper h6.sm_head {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-top: 8px;
+}
+#newYorkParis .container .wrapper .option_wrap {
+  max-width: 450px;
+}
+#newYorkParis .container .wrapper .display-1 {
+  font-size: 3rem;
+}
+#newYorkParis .container .wrapper .bottom {
+  max-width: 400px;
 }
 
 p,
@@ -555,6 +620,10 @@ img {
 
 .cus_rounded {
   border-radius: 25px!important;
+}
+
+.box_shadow, #newYorkParis .container .wrapper {
+  box-shadow: 1px 1px 15px #0000002e, -1px -1px 15px #0000002e;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -10,6 +10,7 @@
 @import 'takeYourJourney';
 @import 'packAndGo';
 @import 'experianceTheWorld';
+@import 'newYorkParis';
 
 
 p,
@@ -63,6 +64,8 @@ img {
     @include fonts(MontMedium, 1.5rem, black, left, capitalize);
 }
 
+
+
 .small_heading_bold {
     @extend .small_heading;
     font-family: MontExtrabold;
@@ -106,4 +109,8 @@ img {
 
 .cus_rounded {
     border-radius: im(25px);
+}
+
+.box_shadow {
+    box-shadow: 1px 1px 15px #0000002e, -1px -1px 15px #0000002e;
 }
