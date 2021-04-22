@@ -510,6 +510,45 @@
   max-width: 400px;
 }
 
+#customerReview {
+  background: black url("../img/customer_review_sm.png") no-repeat center center;
+  background-size: cover;
+}
+#customerReview .container h1, #customerReview .container p {
+  color: white;
+}
+#customerReview .container .star_wrapper {
+  max-width: 250px;
+}
+#customerReview .container .star_wrapper img {
+  width: 35px;
+}
+#customerReview .container .client_wrap {
+  width: 100%;
+  max-width: 325px;
+}
+#customerReview .container .client_wrap img {
+  width: 100px;
+}
+#customerReview .container .client_wrap .details {
+  margin-left: 8px;
+}
+#customerReview .container .client_wrap .details h1 {
+  font-size: 1.6rem;
+  margin-top: 17px;
+}
+
+#startYourJourney {
+  background: url("../img/startYourJourney.jpg") no-repeat center top;
+  background-size: 100% 100%;
+}
+#startYourJourney .container .location {
+  margin-top: 80px;
+}
+#startYourJourney .container .location img {
+  width: 400px;
+}
+
 p,
 a,
 h1,
