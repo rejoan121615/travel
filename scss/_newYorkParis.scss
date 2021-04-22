@@ -7,7 +7,7 @@
         background-size: 100%;
     }
     @include resp($xl) {
-        background-size: 120%;
+        background-size: 1300px;
     }
     .container {
         @include resp($sm) {
