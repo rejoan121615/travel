@@ -1,0 +1,63 @@
+#packAndGo {
+    background: url("../img/onTheGo_bg.jpg") no-repeat center center;
+    background-size: cover;
+
+    // container
+    .container {
+        @include resp($xl) {
+            @include padY(im(220px), im(220px));
+        }
+        // package wrapper
+        .pack_wrapper {
+            // responsive
+            margin-top: im(70px);
+            @include resp($lg) {
+                margin-top: im(100px);
+            }
+            @include resp($xl) {
+                margin-top: im(150px);
+            }
+            .card {
+                cursor: pointer;
+                max-width: 450px;
+                // responsive
+                @include resp($lg) {
+                    max-width: im(initial);
+                }
+
+                //    card image
+                .card-img-top {
+                    border-radius: 25px 25px 0px 0px;
+                    // responsive
+                    @include resp($lg) {
+                        border-radius: 25px 0px 0px 25px;
+                    }
+                    @include resp($xl) {
+                        border-radius: 25px 25px 0px 0px;
+                    }
+                }
+                //    sm head
+                .sm_head {
+                    @extend .para_bold;
+                    font-size: im(1.6rem);
+                }
+                //    section heading
+                .section_heading {
+                    font-size: 2rem;
+                }
+                // animation
+                &.active {
+                    @include resp($xl) {
+                        transform: scale(1.15, 1.15);
+                        background: url("../img/onTheGo/packageAnimation.png")
+                            no-repeat center bottom;
+                        background-size: 100% 100%;
+                        padding-bottom: 80px;
+                        position: relative;
+                        z-index: 100;
+                    }
+                }
+            }
+        }
+    }
+}

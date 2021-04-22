@@ -8,6 +8,7 @@
 @import "chooseJourney";
 @import 'package';
 @import 'takeYourJourney';
+@import 'packAndGo';
 
 
 p,
@@ -100,4 +101,8 @@ img {
 
 #nav-main-wrapper {
     @include bgimg("../img/main-nav-bg.jpg", cover, center center);
+}
+
+.cus_rounded {
+    border-radius: im(25px);
 }

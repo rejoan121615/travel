@@ -228,7 +228,7 @@
     max-width: 95px;
   }
 }
-#chooseYourJourney .container .option_wrap aside .texts .para, #chooseYourJourney .container .option_wrap aside .texts .para_bold {
+#chooseYourJourney .container .option_wrap aside .texts .para, #chooseYourJourney .container .option_wrap aside .texts .para_bold, #chooseYourJourney #packAndGo .container .option_wrap aside .texts .pack_wrapper .card .sm_head, #packAndGo #chooseYourJourney .container .option_wrap aside .texts .pack_wrapper .card .sm_head, #chooseYourJourney #packAndGo .container .pack_wrapper .card .option_wrap aside .texts .sm_head, #packAndGo #chooseYourJourney .container .pack_wrapper .card .option_wrap aside .texts .sm_head {
   max-width: 400px;
 }
 
@@ -265,7 +265,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
-#selectYourPackage .container .package_wrap .item .pack-price .para, #selectYourPackage .container .package_wrap .item .pack-price .para_bold {
+#selectYourPackage .container .package_wrap .item .pack-price .para, #selectYourPackage .container .package_wrap .item .pack-price .para_bold, #selectYourPackage #packAndGo .container .package_wrap .item .pack-price .pack_wrapper .card .sm_head, #packAndGo #selectYourPackage .container .package_wrap .item .pack-price .pack_wrapper .card .sm_head, #selectYourPackage #packAndGo .container .pack_wrapper .card .package_wrap .item .pack-price .sm_head, #packAndGo #selectYourPackage .container .pack_wrapper .card .package_wrap .item .pack-price .sm_head {
   font-size: 2rem;
 }
 #selectYourPackage .container .package_wrap .item .option_list {
@@ -274,13 +274,13 @@
   margin-right: auto;
 }
 @media only screen and (min-width: 1200px) {
-  #selectYourPackage .container .package_wrap .item .option_list .para_bold {
+  #selectYourPackage .container .package_wrap .item .option_list .para_bold, #selectYourPackage #packAndGo .container .package_wrap .item .option_list .pack_wrapper .card .sm_head, #packAndGo #selectYourPackage .container .package_wrap .item .option_list .pack_wrapper .card .sm_head, #selectYourPackage #packAndGo .container .pack_wrapper .card .package_wrap .item .option_list .sm_head, #packAndGo #selectYourPackage .container .pack_wrapper .card .package_wrap .item .option_list .sm_head {
     margin-bottom: 5px;
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1400px) {
-  #selectYourPackage .container .package_wrap .item .option_list .para_bold {
+  #selectYourPackage .container .package_wrap .item .option_list .para_bold, #selectYourPackage #packAndGo .container .package_wrap .item .option_list .pack_wrapper .card .sm_head, #packAndGo #selectYourPackage .container .package_wrap .item .option_list .pack_wrapper .card .sm_head, #selectYourPackage #packAndGo .container .pack_wrapper .card .package_wrap .item .option_list .sm_head, #packAndGo #selectYourPackage .container .pack_wrapper .card .package_wrap .item .option_list .sm_head {
     margin-bottom: 8px;
   }
 }
@@ -340,7 +340,7 @@
   background-color: #00a4ff;
 }
 @media only screen and (min-width: 1200px) {
-  #takeYourJourney .container .texts .para, #takeYourJourney .container .texts .para_bold {
+  #takeYourJourney .container .texts .para, #takeYourJourney .container .texts .para_bold, #takeYourJourney #packAndGo .container .texts .pack_wrapper .card .sm_head, #packAndGo #takeYourJourney .container .texts .pack_wrapper .card .sm_head, #takeYourJourney #packAndGo .container .pack_wrapper .card .texts .sm_head, #packAndGo #takeYourJourney .container .pack_wrapper .card .texts .sm_head {
     margin-top: 70px!important;
     margin-left: 0px!important;
   }
@@ -348,6 +348,68 @@
 @media only screen and (min-width: 1200px) {
   #takeYourJourney .container .texts .btn_wrapper {
     margin-top: 100px!important;
+  }
+}
+
+#packAndGo {
+  background: url("../img/onTheGo_bg.jpg") no-repeat center center;
+  background-size: cover;
+}
+@media only screen and (min-width: 1200px) {
+  #packAndGo .container {
+    padding-top: 220px!important;
+    padding-bottom: 220px!important;
+  }
+}
+#packAndGo .container .pack_wrapper {
+  margin-top: 70px!important;
+}
+@media only screen and (min-width: 992px) {
+  #packAndGo .container .pack_wrapper {
+    margin-top: 100px!important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #packAndGo .container .pack_wrapper {
+    margin-top: 150px!important;
+  }
+}
+#packAndGo .container .pack_wrapper .card {
+  cursor: pointer;
+  max-width: 450px;
+}
+@media only screen and (min-width: 992px) {
+  #packAndGo .container .pack_wrapper .card {
+    max-width: initial!important;
+  }
+}
+#packAndGo .container .pack_wrapper .card .card-img-top {
+  border-radius: 25px 25px 0px 0px;
+}
+@media only screen and (min-width: 992px) {
+  #packAndGo .container .pack_wrapper .card .card-img-top {
+    border-radius: 25px 0px 0px 25px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #packAndGo .container .pack_wrapper .card .card-img-top {
+    border-radius: 25px 25px 0px 0px;
+  }
+}
+#packAndGo .container .pack_wrapper .card .sm_head {
+  font-size: 1.6rem!important;
+}
+#packAndGo .container .pack_wrapper .card .section_heading, #packAndGo .container .pack_wrapper .card .assis_heading {
+  font-size: 2rem;
+}
+@media only screen and (min-width: 1200px) {
+  #packAndGo .container .pack_wrapper .card.active {
+    transform: scale(1.15, 1.15);
+    background: url("../img/onTheGo/packageAnimation.png") no-repeat center bottom;
+    background-size: 100% 100%;
+    padding-bottom: 80px;
+    position: relative;
+    z-index: 100;
   }
 }
 
@@ -367,7 +429,7 @@ img {
   display: inline-block;
 }
 
-.para, .para_bold {
+.para, .para_bold, #packAndGo .container .pack_wrapper .card .sm_head {
   font-family: MontRegular;
   color: black;
   text-align: left;
@@ -375,12 +437,12 @@ img {
   font-size: 1rem;
 }
 @media only screen and (min-width: 1200px) {
-  .para, .para_bold {
+  .para, .para_bold, #packAndGo .container .pack_wrapper .card .sm_head {
     font-size: 1.15rem;
   }
 }
 
-.para_bold {
+.para_bold, #packAndGo .container .pack_wrapper .card .sm_head {
   font-weight: bold;
 }
 
@@ -457,6 +519,10 @@ img {
 #nav-main-wrapper {
   background: url("../img/main-nav-bg.jpg") no-repeat center center;
   background-size: cover;
+}
+
+.cus_rounded {
+  border-radius: 25px!important;
 }
 
 /*# sourceMappingURL=style.css.map */
