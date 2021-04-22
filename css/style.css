@@ -586,6 +586,13 @@
   }
 }
 
+#footer {
+  background-color: #f3db3a;
+}
+#footer .container {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
 p,
 a,
 h1,
