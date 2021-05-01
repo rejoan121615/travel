@@ -767,4 +767,7 @@ img {
   box-shadow: 1px 1px 15px #0000002e, -1px -1px 15px #0000002e;
 }
 
+#packAndGo .container .pack_wrapper .card.active {
+  transition: all 1s;
+
 /*# sourceMappingURL=style.css.map */
